@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "SEGA LOGO FONT";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SEGA LOGO FONT"), url("SEGA.woff") format("woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #00767c;
+  background: linear-gradient(to right, #00767c, #110055);
+}
+.TitleRobot {
+  font-family: "SEGA LOGO FONT";
+  font-weight: 200;
+  color: #0ccac4;
+  font-size: 3rem;
+  margin: 0.67em 0;
+  text-align: center;
+  line-height: 1.15;
+}
+h5 {
+  color: black;
+}
+
+p {
+  color: rgb(0, 0, 0);
+}
+.header {
+  text-align: center;
+}
+
+.App-input {
+  padding: 1rem;
+  background-color: #cdecff;
+  border: 1px solid #19a974;
+  outline-offset: -2px;
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 34px;
+}
+.card-content {
+  color: #0ccac4;
+}
+
+.card-list {
+  position: relative;
+}
+
+.card {
+  margin: 12px;
+}
+.bg-green {
+  cursor: pointer;
+  border-radius: 0.5rem;
+  font-family: sans-serif;
+  line-height: 1.15;
+  background-color: #9eebcf;
+  padding: 1rem;
+  transition: transform 0.25s ease-out;
+}
+.searchinfo{
+  margin-top: 15px;
+    color: rgb(238, 157, 157);
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+}
+.bg-green:hover {
+  transform: scale(1.05);
+  object-fit: cover;
+  text-align: center;
+  background-color: #db9e1b;
+}
+.img {
+  max-width: 100%;
+  border-style: none;
+  height: 150px;
+  width: 100px;
+}
