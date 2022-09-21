@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 
 import "./App.css";
 import Titre from "./component/Titre";
-
 import SearchRobot from "./component/SearchRobot";
 import Cards from "./component/Cards";
 
@@ -13,7 +12,7 @@ function App() {
 
   const image = "https://robohash.org/";
 
-  const requeteUsers = "https://jsonplaceholder.typicode.com/users";
+  const requeteUsers = `https://jsonplaceholder.typicode.com/users`;
 
   useEffect(() => {
     try {
@@ -25,7 +24,7 @@ function App() {
               name: user.name,
               email: user.email,
               address: user.address,
-              image: image + 3 + user.id,
+              image: image + user.id,
               website: user.website,
               company: user.company,
             };
@@ -43,7 +42,7 @@ function App() {
     let query = e.target.value.toLowerCase();
     trouveRobots(query);
     setLoading(false);
-    //  console.log(query)
+
   };
   let trouveRobots = (value) => {
     try {
@@ -60,8 +59,7 @@ function App() {
   return (
     <div className="container">
       <Titre />
-
-        <SearchRobot onChange={fetchSearch} />
+      <SearchRobot onChange={fetchSearch} />
       <div className="">
         <Cards listRobots={listRobots} Loading={Loading} />
       </div>

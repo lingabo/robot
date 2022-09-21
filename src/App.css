@@ -32,7 +32,10 @@ p {
 .header {
   text-align: center;
 }
-
+.Titredetail{
+  text-align: center;
+  color: aliceblue;
+}
 .App-input {
   padding: 1rem;
   background-color: #cdecff;
@@ -54,6 +57,16 @@ p {
 .card {
   margin: 12px;
 }
+
+.styleCard {
+  
+  width: 350px;
+  text-align: center;
+  position: relative;
+  left: 500px;
+  background-color: #9eebcf;
+
+}
 .bg-green {
   cursor: pointer;
   border-radius: 0.5rem;
@@ -63,12 +76,16 @@ p {
   padding: 1rem;
   transition: transform 0.25s ease-out;
 }
-.searchinfo{
+
+.color-card {
+  background-color: #9eebcf;
+}
+.searchinfo {
   margin-top: 15px;
-    color: rgb(238, 157, 157);
-    font-size: 1.5rem;
-    text-align: center;
-    width: 100%;
+  color: rgb(238, 157, 157);
+  font-size: 1.5rem;
+  text-align: center;
+  width: 100%;
 }
 .bg-green:hover {
   transform: scale(1.05);
