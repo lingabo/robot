@@ -4,7 +4,7 @@ import RobotDetail from "./RobotDetail";
 const Cards = ({ listRobots, Loading }) => {
   return (
     <>
-      <div className="row card-list row-cols-1 row-cols-sm-2 row-cols-md-5 justify-content-center">
+      <div className="row card-list row-cols-1 row-cols-sm-2 row-cols-md-4 justify-content-center">
         {listRobots.length === 0 && Loading ? (
           <LoadingData />
         ) : listRobots.length === 0 && !Loading ? (
